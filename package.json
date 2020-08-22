@@ -1,0 +1,16 @@
+{
+  "name": "stand_alone_node_backend",
+  "version": "1.0.0",
+  "description": "A basic stand alone node backend",
+  "main": "index.js",
+  "author": "Dibwe Kalangu",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-node-externals": "^2.5.1"
+  }
+}
