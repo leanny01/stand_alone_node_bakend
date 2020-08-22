@@ -5,6 +5,11 @@
   "main": "index.js",
   "author": "Dibwe Kalangu",
   "license": "MIT",
+  "scripts": {
+    "development": "nodemon",
+    "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+    "start": "NODE_ENV=production node ./dist/server.generated.js"
+  },
   "devDependencies": {
     "@babel/core": "^7.11.4",
     "@babel/preset-env": "^7.11.0",
@@ -12,5 +17,8 @@
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-node-externals": "^2.5.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
